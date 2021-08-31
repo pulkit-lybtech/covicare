@@ -53,6 +53,58 @@ body {
           box-shadow: 0 0 4px rgba(0, 85, 204, 0.3);
 }
 
+.service {
+  background-color: rgba(37, 138, 255, 0.1);
+  padding-top: 6rem;
+}
+
+.service .row .col-md-6:nth-child(2n) {
+  margin-top: -3rem;
+}
+
+.service .card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 4px rgba(14, 86, 124, 0.165308);
+          box-shadow: 0px 2px 4px rgba(14, 86, 124, 0.165308);
+  border-radius: 2px;
+  margin-bottom: 1.75rem;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.service .card .card-body {
+  padding: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service .card .thumb {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 98px;
+          flex: 0 0 98px;
+  height: 98px;
+  margin-right: 1.5rem;
+  max-width: 98px;
+}
+
+.service .card .inner .title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  /* or 32px */
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.service .card .inner a {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: #8C97AC;
+}
+
 .main-header {
   background-color: #fff;
   position: -webkit-sticky;
@@ -303,4 +355,3 @@ body {
 .about .inner .text-body {
   line-height: 1.7755;
 }
-/*# sourceMappingURL=main.css.map */

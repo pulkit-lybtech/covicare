@@ -1,0 +1,50 @@
+.service{
+	background-color: rgba($blue, 0.1);
+	padding-top: 6rem;
+	h3.title{
+
+	}
+	.row{
+		.col-md-6{
+			&:nth-child(2n){
+				margin-top: -3rem;
+			}
+		}
+	}
+	.card{
+		background: #FFFFFF;
+		box-shadow: 0px 2px 4px rgba(14, 86, 124, 0.165308);
+		border-radius: 2px;
+		margin-bottom: 1.75rem;
+		height: min-content;
+		.card-body{
+			padding: 1.5rem;
+			align-items: center;
+		}
+		.thumb{
+			flex: 0 0 98px;
+			height: 98px;
+			margin-right: 1.5rem;
+			max-width: 98px;
+		}
+		.inner{
+			.title{
+				font-weight: 800;
+				font-size: 20px;
+				line-height: 120%;
+				/* or 32px */
+				letter-spacing: 1px;
+				text-transform: capitalize;
+			}
+			a{
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 21px;
+				color: #8C97AC;
+			}
+		}
+
+
+
+	}
+}

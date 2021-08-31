@@ -14,4 +14,27 @@ $(document).ready(() => {
         $(".mobile-menu").toggleClass("active");
         $(this).toggleClass("active");
     });
+
+
+    // owl carousel TESTIMONIAL PRODUCT SLIDER 
+$('#test-slider').owlCarousel({
+    loop:true,
+    items: 2,
+    margin:10,
+    nav:false,
+    dots: true,
+    
+    // responsive:{
+    //     0:{
+    //         dots: true
+    //     },
+    //     769:{
+    //         dots: false
+    //     },
+    //     992:{
+    //         items:2,
+    //         dots: false
+    //     }
+    // }
+});
 })
