@@ -19,22 +19,20 @@ $(document).ready(() => {
     // owl carousel TESTIMONIAL PRODUCT SLIDER 
 $('#test-slider').owlCarousel({
     loop:true,
+    margin:16,
     items: 2,
-    margin:10,
-    nav:false,
     dots: true,
-    
-    // responsive:{
-    //     0:{
-    //         dots: true
-    //     },
-    //     769:{
-    //         dots: false
-    //     },
-    //     992:{
-    //         items:2,
-    //         dots: false
-    //     }
-    // }
+    nav: false,
+    responsive:{
+        0:{
+            items: 1
+        },
+        769:{
+            items: 1,
+        },
+        992:{
+            items:2,
+        }
+    }
 });
 })
