@@ -1,0 +1,23 @@
+
+
+
+
+
+
+ ///////////////// ========   MIXINS    ========== ///////////////////// 
+ @mixin mediaq($xy) {
+    @media only screen and (max-width: $xy) {
+      @content;
+    }
+  }
+
+ ///////////////// ========   VARIABLES    ========== ///////////////////// 
+ 
+$md: 768px;
+$lg: 992px;
+$sm: 576px;
+$xl: 1200px;
+
+
+$purple: #343a40;
+$blue: #258AFF;

@@ -17,22 +17,41 @@ $(document).ready(() => {
 
 
     // owl carousel TESTIMONIAL PRODUCT SLIDER 
-$('#test-slider').owlCarousel({
-    loop:true,
-    margin:16,
-    items: 2,
-    dots: true,
-    nav: false,
-    responsive:{
-        0:{
-            items: 1
+var testSlider = $('#test-slider');
+    testSlider.owlCarousel({
+      loop: true,
+      margin: 16,
+      items: 2,
+      dots: true,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1,
         },
-        769:{
-            items: 1,
+        769: {
+          items: 1,
         },
-        992:{
-            items:2,
-        }
-    }
-});
+        992: {
+          items: 2,
+        },
+      },
+    });
+
+
+
+    testSlider.owlCarousel();
+    // Go to the next item
+    $("#next-btn").click(function () {
+        testSlider.trigger("next.owl.carousel");
+    });
+    // Go to the previous item
+    $("#prev-btn").click(function () {
+      // With optional speed parameter
+      // Parameters has to be in square bracket '[]'
+      testSlider.trigger("prev.owl.carousel");
+    });
+
+
+
+    //  document ends here 
 })

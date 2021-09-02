@@ -82,3 +82,50 @@
         font-size: 2.22rem;
     }
 }
+
+.page-header{
+    position: relative;
+    padding: 2rem 0;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, #EEF6FF 0%, rgba(238, 246, 255, 0) 100%);        z-index: -1;
+    }
+    h1{
+        font-weight: bold;
+        font-size: 3rem;
+        /* or 81px */
+
+        text-align: center;
+
+        color: #363643;
+        padding-top: 2rem;
+    }
+    .pagination {
+        .page-item{
+            &:not(:last-child){
+                .page-link{
+                    &::after{
+                        content: '>';
+                        padding-left: .5rem;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+                }
+            }
+        }
+        .page-link {
+            background: #0000;
+            border: 0;
+            font-size: 15px;
+            line-height: 140%;
+            color: #999;
+
+              
+            }
+        }
+    }

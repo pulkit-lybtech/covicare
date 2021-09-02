@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    font-size: 16px;
+}
 body{
     color: var(--gray-800);
     font-family: "Exo", sans-serif;
+    line-height: 1.6;
 }
 ::selection{
     color: seashell;
@@ -21,46 +25,32 @@ body{
 }
 .title{
     color: #343a40;
+
+    @include mediaq($md){
+        text-align: center;
+    }
 }
 .text-body{
     color: #456 !important;
 }
-.btn{
+.btn:not(.btn-sm){
     border-radius: 4px;
     font-size: 14px;
     text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-    line-height: 20px;
-    padding: 14px 27px;
-
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 12px 24px;
     &:hover{
         box-shadow: 0 0 4px rgba($color: #05c, $alpha: 0.3);
     }
 }
 
+strong{
+    font-weight: 600;
+}
 
-
-
-
-
-
-
-
- ///////////////// ========   MIXINS    ========== ///////////////////// 
- @mixin mediaq($xy) {
-    @media only screen and (max-width: $xy) {
-      @content;
-    }
-  }
-
- ///////////////// ========   VARIABLES    ========== ///////////////////// 
- 
-$md: 768px;
-$lg: 992px;
-$sm: 576px;
-$xl: 1200px;
-
-
-$purple: #343a40;
-$blue: #258AFF;
+h4.title{
+    font-weight: 600;
+    text-transform: capitalize;
+}
