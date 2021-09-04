@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  
     ////// STICKY HEADER MENU ON SCROLL
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -13,6 +14,7 @@ $(document).ready(() => {
     $(".nav-toggler").click(function () {
         $(".mobile-menu").toggleClass("active");
         $(this).toggleClass("active");
+        $('body').toggleClass("overflow-hidden")
     });
 
 
