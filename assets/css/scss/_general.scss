@@ -2,6 +2,12 @@
 	background-color: rgba($blue, 0.1);
 	padding-top: 6rem;
 	padding-bottom: 3rem;
+	.text-warning{
+		display: block;
+		@include mediaq($md){
+			text-align: center;
+		}
+	}
 	h3.title{
 		font-size: 2.66rrem;
 	}
@@ -9,7 +15,6 @@
 		.col-md-6{
 			&:nth-child(2n){
 				margin-top: -3rem;
-
 				@include mediaq($lg) {
 					margin-top: 0;
 				}
@@ -47,6 +52,7 @@
 				@include mediaq($md){
 					font-size: 18px;
 					line-height: 130%;
+					text-align: left;
 				}
 			}
 			a{
@@ -135,7 +141,6 @@
 		}
 	}
 }
-
 
 section.donate{
 	background-color: #1D293F;

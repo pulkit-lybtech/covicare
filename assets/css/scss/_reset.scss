@@ -54,3 +54,9 @@ h4.title{
     font-weight: 600;
     text-transform: capitalize;
 }
+
+h2.title{
+    @include mediaq($md){
+        font-size: 1.8rem;
+    }
+}
