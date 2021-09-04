@@ -193,8 +193,12 @@ section.donate{
 section.links{
 	position: relative;
 	svg{
-		bottom: -44px;
-		right: 20px;
+		&.right-2{
+			height: 70px;
+			width:-70px;
+		}
+		bottom: -35px;
+		right: 35px;
 		z-index: 9;
 	}
 	.big-btn{

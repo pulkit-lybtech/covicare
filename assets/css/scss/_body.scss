@@ -160,7 +160,14 @@
             margin-right: -10px;
             padding: 2rem 1.25rem;
         }
+
+        &:hover{
+            .icon{
+                animation: updown 1.5s linear infinite alternate both;
+            }
+        }
         .icon{
+            transition: 1.5s;
             flex: 0 0 220px;
             max-width: 220px;
             margin-right: 2rem;
@@ -230,4 +237,17 @@
         letter-spacing: 1px;
         font-weight: 600;
         color: #757879;
+    }
+
+    @keyframes updown {
+        0% {
+            transform: translateY(10px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+      
+        100% {
+            transform: translateY(10px);
+        }
     }

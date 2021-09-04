@@ -1,5 +1,5 @@
 @import url("./bootstrap.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium Web:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@
 
 body {
   color: var(--gray-800);
-  font-family: "Exo", sans-serif;
+  font-family: "Titillium Web    ", sans-serif;
   line-height: 1.6;
 }
 
@@ -323,9 +323,14 @@ section.links {
 }
 
 section.links svg {
-  bottom: -44px;
-  right: 20px;
+  bottom: -35px;
+  right: 35px;
   z-index: 9;
+}
+
+section.links svg.right-2 {
+  height: 70px;
+  width: -70px;
 }
 
 section.links .big-btn {
@@ -1072,7 +1077,14 @@ section.links .big-btn {
   }
 }
 
+.services-card:hover .icon {
+  -webkit-animation: updown 1.5s linear infinite alternate both;
+          animation: updown 1.5s linear infinite alternate both;
+}
+
 .services-card .icon {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 220px;
           flex: 0 0 220px;
@@ -1174,6 +1186,36 @@ label {
   color: #757879;
 }
 
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes updown {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
 footer.footer {
   padding-top: 3rem;
   padding-bottom: 10rem;
@@ -1224,33 +1266,6 @@ footer.footer .widget .nav-link, footer.footer .widget p {
   font-weight: 500;
   font-size: 16px;
   color: #7C8087;
-}
-
-footer.footer .widget.subscribe {
-  max-width: 420px;
-  margin: 0 auto;
-}
-
-footer.footer .widget.subscribe .form-control {
-  background: #FAFAFA;
-  border: 1px solid #E6E6E6;
-  -webkit-box-shadow: 0px 32px 84px rgba(14, 86, 124, 0.165308);
-          box-shadow: 0px 32px 84px rgba(14, 86, 124, 0.165308);
-  border-radius: 4px;
-  height: 3.95rem;
-}
-
-footer.footer .widget.subscribe .btn {
-  position: absolute;
-  right: .35rem;
-  top: 50%;
-  font-size: 15px;
-  letter-spacing: 0;
-  font-weight: 600;
-  text-transform: capitalize;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding: 12px 16px;
 }
 
 footer.footer .widget .social {
